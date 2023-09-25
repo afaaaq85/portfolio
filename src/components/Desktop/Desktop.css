@@ -1,0 +1,16 @@
+.desktop-items-grid{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: start;
+    justify-content: center;
+}
+.desktop-item-icon{
+    height: 60px;
+    width: 60px;
+}

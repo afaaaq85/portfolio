@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.main-app{
+  background-image: url('./assets/windows11.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
