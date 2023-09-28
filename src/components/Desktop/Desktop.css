@@ -1,34 +1,34 @@
-.desktop-items-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    align-items: flex-start;
-    max-height: 600px;
+.desktop-items-container {
+  display: flex;
+  margin: 1% 1%;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Poppins Light;
+  align-items: flex-start;
 }
 
 .item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: center;
-    grid-auto-flow: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  max-width: fit-content;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  gap: 5px;
 
 }
 
 .desktop-item-icon {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
 }
 
-@media (max-height: 600px) {
-  .desktop-items-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-}
+@media (max-height: 600px) {}
 
-@media (max-height: 400px) {
-  .desktop-items-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
-}
+@media (max-height: 400px) {}

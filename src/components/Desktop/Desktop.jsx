@@ -7,18 +7,14 @@ import './Desktop.css';
 
 const Desktop = () => {
   return (
-    <div className='desktop-items-grid'>
-      <div className='item'>
-        <img className='desktop-item-icon' src={cvIcon} alt='img' />
-        <p>CV</p>
-      </div>
+    <div className='desktop-items-container'>
       <div className='item'>
         <img className='desktop-item-icon' src={projectsIcon} alt='img' />
-        <p>My Projects</p>
+        <p>Projects</p>
       </div>
       <div className='item'>
         <img className='desktop-item-icon' src={fullscreenIcon} alt='img' />
-        <p>Expand Screen</p>
+        <p>Expand </p>
       </div>
       <div className='item'>
         <img className='desktop-item-icon' src={githubIcon} alt='img' />
@@ -26,7 +22,15 @@ const Desktop = () => {
       </div>
       <div className='item'>
         <img className='desktop-item-icon' src={linkedinIcon} alt='img' />
-        <p>Linkedin Profile</p>
+        <p>Linkedin </p>
+      </div>
+      <div className='item'>
+        <img className='desktop-item-icon' src={cvIcon} alt='img' />
+        <p>CV</p>
+      </div>
+      <div className='item'>
+        <img className='desktop-item-icon' src={linkedinIcon} alt='img' />
+        <p>Linkedin </p>
       </div>
       <div className='item'>
         <img className='desktop-item-icon' src={cvIcon} alt='img' />
