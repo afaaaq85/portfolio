@@ -3,6 +3,7 @@
     grid-template-columns: 1fr;
     grid-gap: 20px;
     align-items: flex-start;
+    max-height: 600px;
 }
 
 .item {
@@ -11,6 +12,8 @@
     align-items: center;
     justify-content: flex-start;
     text-align: center;
+    grid-auto-flow: column;
+
 }
 
 .desktop-item-icon {
