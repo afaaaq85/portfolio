@@ -4,27 +4,13 @@ import cvIcon from '../../assets/CV-icon.png';
 import fullscreenIcon from '../../assets/fullscreen-icon.png';
 import githubIcon from '../../assets/github-icon.png';
 import linkedinIcon from '../../assets/linkedin-icon.png';
-import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Snackbar from '@mui/material/Snackbar';
+import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import './Desktop.css';
 
 const Desktop = () => {
 
-  const [state, setState] = useState({
-    open: false,
-    vertical: 'top',
-    horizontal: 'center',
-  });
-
-  const { vertical, horizontal, open } = state;
-  const handleClick = (newState) => () => {
-    setState({ ...newState, open: true });
-  };
-
-  const handleClose = () => {
-    setState({ ...state, open: false });
-  };
+  const [showPopup, setShowPopup] = useState(true);
 
   return (
     <>
@@ -50,19 +36,20 @@ const Desktop = () => {
           <p>CV</p>
         </div>
       </div>
-      <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-        <Button onClick={handleClick({ vertical: 'top', horizontal: 'center' })}>
-          Top-Center
-        </Button>
-        <Snackbar
-          anchorOrigin={{ vertical, horizontal }}
-          open={open}
-          onClose={handleClose}
-          message="I love snacks"
-          key={vertical + horizontal}
-          className='snackbar'
-        />
-      </Box>
+      {showPopup && (
+        <div className="popup">
+          <div className='msg-box-info'>
+            <div className='msg-box-text'>
+              <LightbulbIcon fontSize='medium' />
+              <p>Did you know?</p>
+            </div>
+            <div>
+              <p>This app will work great on phone too!</p>
+            </div>
+          </div>
+          <Button onClick={() => setShowPopup(false)} variant="text" color='primary'>OK</Button>
+        </div>
+      )}
     </>
 
   );

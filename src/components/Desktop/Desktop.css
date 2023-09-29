@@ -29,13 +29,45 @@
   height: 70px;
 }
 
-.snackbar{
+.snackbar {
   height: 100px;
   background-color: white;
   color: red;
 
 }
 
+.popup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  padding: 20px;
+  color: white;
+  font-size: 13px;
+  font-family: Poppins Light;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.37);
+
+}
+.msg-box-text{
+  display: flex;
+  gap: 2px;
+  align-items: flex-end;
+}
+.msg-box-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+}
 @media (max-height: 600px) {}
 
-@media (max-height: 400px) {} 
+@media (max-height: 400px) {}
