@@ -29,6 +29,13 @@
   height: 70px;
 }
 
+.snackbar{
+  height: 100px;
+  background-color: white;
+  color: red;
+
+}
+
 @media (max-height: 600px) {}
 
-@media (max-height: 400px) {}
+@media (max-height: 400px) {} 
