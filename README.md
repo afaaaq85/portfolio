@@ -1,1 +1,1 @@
-<a href='afaaaq85.vercel.app'>Live Demo</a>
+Watch the demo [here](https://afaaaq85.vercel.app/). 
